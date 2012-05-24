@@ -1,0 +1,14 @@
+<%
+    session.start();
+    session.data.count = session.data.count || 0;
+    session.data.count++;
+%>
+<html>
+<head>
+    <title>Testing Sessions</title>
+</head>
+<body>
+<h1>Testing Sessions</h1>
+<p>Request count: <%= session.data.count %></p>
+</body>
+</html>
