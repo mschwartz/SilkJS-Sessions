@@ -153,10 +153,10 @@
 
     // iterate through the Config.sessionDir and delete all the session files
     // at server startup.
-    fs.list(Config.sessionDir, /silkjs_session_.*/).each(function(file) {
-        console.dir('removing ' + Config.sessionDir + file);
-        fs.unlink(Config.sessionDir + file);
-    });
+//    fs.list(Config.sessionDir, /silkjs_session_.*/).each(function(file) {
+//        console.dir('removing ' + Config.sessionDir + file);
+//        fs.unlink(Config.sessionDir + file);
+//    });
 
     // kick start the garbage collector
     sessionGarbageCollector();
